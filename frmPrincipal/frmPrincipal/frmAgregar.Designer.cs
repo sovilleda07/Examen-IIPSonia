@@ -30,13 +30,9 @@
         {
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtArtista = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtAnio = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblArtista = new System.Windows.Forms.Label();
-            this.lblAlbum = new System.Windows.Forms.Label();
             this.lblGenero = new System.Windows.Forms.Label();
             this.lblAnio = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -61,79 +57,42 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(578, 91);
+            this.txtNombre.Location = new System.Drawing.Point(578, 127);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(149, 24);
             this.txtNombre.TabIndex = 1;
             // 
-            // txtArtista
-            // 
-            this.txtArtista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArtista.Location = new System.Drawing.Point(578, 135);
-            this.txtArtista.Name = "txtArtista";
-            this.txtArtista.Size = new System.Drawing.Size(149, 24);
-            this.txtArtista.TabIndex = 2;
-            this.txtArtista.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(578, 180);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 24);
-            this.textBox3.TabIndex = 3;
-            // 
             // txtGenero
             // 
             this.txtGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGenero.Location = new System.Drawing.Point(578, 224);
+            this.txtGenero.Location = new System.Drawing.Point(578, 192);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(149, 24);
             this.txtGenero.TabIndex = 4;
             // 
-            // textBox5
+            // txtAnio
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(578, 272);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(149, 24);
-            this.textBox5.TabIndex = 5;
+            this.txtAnio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnio.Location = new System.Drawing.Point(578, 272);
+            this.txtAnio.Name = "txtAnio";
+            this.txtAnio.Size = new System.Drawing.Size(149, 24);
+            this.txtAnio.TabIndex = 5;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(414, 94);
+            this.lblNombre.Location = new System.Drawing.Point(414, 130);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(62, 18);
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Nombre";
             // 
-            // lblArtista
-            // 
-            this.lblArtista.AutoSize = true;
-            this.lblArtista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtista.Location = new System.Drawing.Point(414, 138);
-            this.lblArtista.Name = "lblArtista";
-            this.lblArtista.Size = new System.Drawing.Size(49, 18);
-            this.lblArtista.TabIndex = 7;
-            this.lblArtista.Text = "Artista";
-            // 
-            // lblAlbum
-            // 
-            this.lblAlbum.AutoSize = true;
-            this.lblAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlbum.Location = new System.Drawing.Point(414, 183);
-            this.lblAlbum.Name = "lblAlbum";
-            this.lblAlbum.Size = new System.Drawing.Size(49, 18);
-            this.lblAlbum.TabIndex = 8;
-            this.lblAlbum.Text = "Album";
-            // 
             // lblGenero
             // 
             this.lblGenero.AutoSize = true;
             this.lblGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenero.Location = new System.Drawing.Point(414, 227);
+            this.lblGenero.Location = new System.Drawing.Point(414, 195);
             this.lblGenero.Name = "lblGenero";
             this.lblGenero.Size = new System.Drawing.Size(58, 18);
             this.lblGenero.TabIndex = 9;
@@ -158,6 +117,7 @@
             this.btnAgregar.TabIndex = 11;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lstArtistas
             // 
@@ -166,6 +126,7 @@
             this.lstArtistas.Name = "lstArtistas";
             this.lstArtistas.Size = new System.Drawing.Size(221, 108);
             this.lstArtistas.TabIndex = 16;
+            this.lstArtistas.Click += new System.EventHandler(this.lstArtistas_Click);
             // 
             // gbArtistas
             // 
@@ -205,17 +166,14 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblAnio);
             this.Controls.Add(this.lblGenero);
-            this.Controls.Add(this.lblAlbum);
-            this.Controls.Add(this.lblArtista);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtAnio);
             this.Controls.Add(this.txtGenero);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.txtArtista);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblTitulo);
             this.Name = "frmAgregar";
             this.Text = "Ingreso";
+            this.Load += new System.EventHandler(this.frmAgregar_Load);
             this.gbAlbum.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,13 +184,9 @@
 
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtArtista;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox txtGenero;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtAnio;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblArtista;
-        private System.Windows.Forms.Label lblAlbum;
         private System.Windows.Forms.Label lblGenero;
         private System.Windows.Forms.Label lblAnio;
         private System.Windows.Forms.Button btnAgregar;

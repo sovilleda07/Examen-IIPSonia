@@ -27,5 +27,11 @@ namespace frmPrincipal
             frmAgregar agregar = new frmAgregar();
             agregar.ShowDialog();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            frmEliminar eliminar = new frmEliminar();
+            eliminar.ShowDialog();
+        }
     }
 }
