@@ -57,6 +57,7 @@
     <Compile Include="frmAgregar.Designer.cs">
       <DependentUpon>frmAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
