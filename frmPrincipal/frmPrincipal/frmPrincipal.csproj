@@ -57,6 +57,9 @@
     <Compile Include="frmAgregar.Designer.cs">
       <DependentUpon>frmAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Artista.cs" />
+    <Compile Include="Models\Cancion.cs" />
     <Compile Include="Models\Conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
